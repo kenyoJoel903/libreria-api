@@ -1,0 +1,17 @@
+server:
+  port: 8086
+  context-path: /libreria-api
+  
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5435/libreriabd
+    username: postgres
+    password: geosam
+  mvc:
+    dispatch-options-request: true
